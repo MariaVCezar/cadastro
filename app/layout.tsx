@@ -29,7 +29,9 @@ export default function RootLayout({
       >
         <div>
           <a href="/university">Listar Universidade</a>
+          <a href="/university/new">Cadastrar Universidade</a>
           <a href="/student">Listar Estudante</a>
+            <a href="/student/new">Cadastrar Estudante</a>
         </div>
 
         {children}
