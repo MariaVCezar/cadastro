@@ -27,12 +27,39 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
-          <a href="/university">Listar Universidade</a>
-          <a href="/university/new">Cadastrar Universidade</a>
-          <a href="/student">Listar Estudante</a>
-            <a href="/student/new">Cadastrar Estudante</a>
-        </div>
+        <nav className="bg-blue-600 text-white shadow-lg">
+          <div className="max-w-7xl mx-auto px-4 py-4">
+            <div className="flex items-center justify-between gap-8">
+              <div className="text-2xl font-bold">Cadastro</div>
+              <div className="flex gap-6 items-center">
+                <a
+                  href="/university"
+                  className="hover:bg-blue-700 px-4 py-2 rounded transition duration-200"
+                >
+                  Listar Universidade
+                </a>
+                <a
+                  href="/university/new"
+                  className="hover:bg-blue-700 px-4 py-2 rounded transition duration-200"
+                >
+                  Cadastrar Universidade
+                </a>
+                <a
+                  href="/student"
+                  className="hover:bg-blue-700 px-4 py-2 rounded transition duration-200"
+                >
+                  Listar Estudante
+                </a>
+                <a
+                  href="/student/new"
+                  className="hover:bg-blue-700 px-4 py-2 rounded transition duration-200"
+                >
+                  Cadastrar Estudante
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
 
         {children}
       </body>
